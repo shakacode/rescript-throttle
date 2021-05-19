@@ -40,9 +40,17 @@ jobs:
         run: yarn install
         working-directory: ./rescript-throttle
 
+      - name: Install rescript-throttle-react deps
+        run: yarn install
+        working-directory: ./rescript-throttle-react
+
       - name: Build rescript-throttle
         run: yarn run build
         working-directory: ./rescript-throttle
+
+      - name: Build rescript-throttle-react
+        run: yarn run build
+        working-directory: ./rescript-throttle-react
 
       - name: Test rescript-throttle
         run: yarn run test
