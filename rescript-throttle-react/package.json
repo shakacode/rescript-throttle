@@ -4,6 +4,7 @@
   "description": "Throttle hooks for @rescript/react",
   "author": "Alex Fedoseev <alex@fedoseev.mx>",
   "license": "MIT",
+  "homepage": "https://github.com/shakacode/rescript-throttle",
   "repository": {
     "type": "git",
     "url": "https://github.com/shakacode/rescript-throttle.git"
