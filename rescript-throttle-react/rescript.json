@@ -1,0 +1,18 @@
+{
+    "name": "rescript-throttle-react",
+    "sources": [
+        "src"
+    ],
+    "bs-dependencies": [
+        "@rescript/react",
+        "rescript-throttle"
+    ],
+    "package-specs": {
+        "module": "es6",
+        "in-source": true
+    },
+    "suffix": ".res.js",
+    "warnings": {
+        "number": "+A-42-48"
+    }
+}

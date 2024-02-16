@@ -20,7 +20,7 @@ yarn add rescript-throttle-react
 npm install --save rescript-throttle-react
 ```
 
-Then add it to `bsconfig.json`:
+Then add it to `rescript.json`:
 
 ```json
 "bs-dependencies": [
@@ -32,13 +32,13 @@ Then add it to `bsconfig.json`:
 
 ```rescript
 // With default timeout (100ms)
-let fn = ReactThrottle.useThrottled(fn)
+let fn = fn->ReactThrottle.useThrottled
 
 // With configured timeout
-let fn = ReactThrottle.useThrottled(~wait=250, fn)
+let fn = fn->ReactThrottle.useThrottled(~wait=250)
 
 // Controlled hook
-let fn = ReactThrottle.useControlled(fn)
+let fn = fn->ReactThrottle.useControlled
 ```
 
 See [`rescript-throttle`](https://www.npmjs.com/package/rescript-throttle) for more details.

@@ -20,7 +20,7 @@ yarn add rescript-throttle
 npm install --save rescript-throttle
 ```
 
-Then add it to `bsconfig.json`:
+Then add it to `rescript.json`:
 
 ```json
 "bs-dependencies": [
@@ -32,10 +32,10 @@ Then add it to `bsconfig.json`:
 
 ```rescript
 // Pass function you want to throttle
-let fn = Throttle.make(fn)
+let fn = fn->Throttle.make
 
 // You can configure timeout. Default is 100ms.
-let fn = Throttle.make(~wait=500, fn)
+let fn = fn->Throttle.make(~wait=500)
 
 // This call is throttled
 fn()
@@ -44,7 +44,7 @@ fn()
 Also, you can get more control over the throttling:
 
 ```rescript
-let fn = Throttle.makeControlled(fn)
+let fn = fn->Throttle.makeControlled
 
 // Schedule invocation
 fn.schedule()
@@ -89,6 +89,8 @@ let make = () => {
   )
 }
 ```
+
+If you want to define trottled function within component's body, use [`rescript-throttle-react`](https://www.npmjs.com/package/rescript-throttle-react).
 
 ## License
 

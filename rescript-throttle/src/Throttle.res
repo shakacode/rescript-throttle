@@ -17,16 +17,16 @@ let makeControlled = (~wait=100, fn: 'a => unit): throttled<'a> => {
     | Ready =>
       x->fn
       status := Waiting
-      timerId := Some(wait->Js.Global.setTimeout(() => {
-            status := Ready
-            timerId := None
-            switch arg.contents {
-            | Some(x) =>
-              arg := None
-              x->fn
-            | None => ignore()
-            }
-          }, _))
+      timerId := Some(wait->(setTimeout(() => {
+              status := Ready
+              timerId := None
+              switch arg.contents {
+              | Some(x) =>
+                arg := None
+                x->fn
+              | None => ignore()
+              }
+            }, _)))
     | Waiting => arg := Some(x)
     }
 
@@ -39,7 +39,7 @@ let makeControlled = (~wait=100, fn: 'a => unit): throttled<'a> => {
   let cancel = () => {
     switch timerId.contents {
     | Some(id) =>
-      id->Js.Global.clearTimeout
+      id->clearTimeout
       timerId := None
     | None => ignore()
     }
@@ -56,10 +56,10 @@ let makeControlled = (~wait=100, fn: 'a => unit): throttled<'a> => {
   }
 
   {
-    invoke: invoke,
-    schedule: schedule,
-    scheduled: scheduled,
-    cancel: cancel,
+    invoke,
+    schedule,
+    scheduled,
+    cancel,
   }
 }
 
