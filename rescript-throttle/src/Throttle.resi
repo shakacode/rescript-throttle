@@ -5,5 +5,5 @@ type throttled<'a> = {
   cancel: unit => unit,
 }
 
-let make: (~wait: int=?, 'a => unit, 'a) => unit
+let make: (~wait: int=?, 'a => unit) => 'a => unit
 let makeControlled: (~wait: int=?, 'a => unit) => throttled<'a>
