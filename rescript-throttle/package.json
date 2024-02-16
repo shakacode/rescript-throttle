@@ -1,6 +1,6 @@
 {
   "name": "rescript-throttle",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Throttle for ReScript",
   "author": "Alex Fedoseev <alex@35mil.me>",
   "license": "MIT",
