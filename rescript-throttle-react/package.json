@@ -1,6 +1,6 @@
 {
   "name": "rescript-throttle-react",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Throttle hooks for @rescript/react",
   "author": "Alex Fedoseev <alex@35mil.me>",
   "license": "MIT",
@@ -10,12 +10,12 @@
     "url": "https://github.com/shakacode/rescript-throttle.git"
   },
   "scripts": {
-    "start": "npm run watch",
+    "start": "yarn run watch",
     "build": "rescript build",
-    "prebuild": "npm run clean",
-    "watch": "rescript build -w",
+    "prebuild": "yarn run clean",
+    "watch": "rescript watch",
     "clean": "rescript clean",
-    "format": "rescript format -all"
+    "format": "rescript format"
   },
   "files": [
     "src",
@@ -33,10 +33,10 @@
     "throttle"
   ],
   "dependencies": {
-    "rescript-throttle": "^2.0.0"
+    "rescript-throttle": "^3.0.0"
   },
   "devDependencies": {
-    "@rescript/react": "0.12.1",
-    "rescript": "11.0.1"
+    "@rescript/react": "0.14.1",
+    "rescript": "12.1.0"
   }
 }

@@ -7,21 +7,15 @@
             "type": "dev"
         }
     ],
-    "bs-dependencies": [
-        "@rescript/core"
-    ],
-    "bs-dev-dependencies": [
+    "dev-dependencies": [
         "@glennsl/rescript-jest"
     ],
     "package-specs": {
-        "module": "es6",
+        "module": "esmodule",
         "in-source": true
     },
     "suffix": ".res.js",
     "warnings": {
         "number": "+A-42-48"
-    },
-    "bsc-flags": [
-        "-open RescriptCore"
-    ]
+    }
 }
