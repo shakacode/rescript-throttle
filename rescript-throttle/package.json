@@ -10,14 +10,14 @@
     "url": "https://github.com/shakacode/rescript-throttle.git"
   },
   "scripts": {
-    "start": "npm run watch",
+    "start": "yarn run watch",
     "build": "rescript build",
-    "prebuild": "npm run clean",
-    "watch": "rescript build -w",
+    "prebuild": "yarn run clean",
+    "watch": "rescript watch",
     "clean": "rescript clean",
     "test": "jest",
-    "pretest": "npm run clean && npm run build",
-    "format": "rescript format -all"
+    "pretest": "yarn run clean && yarn run build",
+    "format": "rescript format"
   },
   "files": [
     "src",
@@ -35,13 +35,11 @@
     "throttle"
   ],
   "devDependencies": {
-    "@babel/core": "7.23.9",
-    "@babel/preset-env": "7.23.9",
-    "@glennsl/rescript-jest": "0.10.0",
-    "babel-jest": "29.7.0",
-    "rescript": "11.0.1"
+    "@babel/core": "7.29.0",
+    "@babel/preset-env": "7.29.0",
+    "@glennsl/rescript-jest": "0.13.1",
+    "babel-jest": "30.2.0",
+    "rescript": "12.1.0"
   },
-  "dependencies": {
-    "@rescript/core": "1.0.0"
-  }
+  "dependencies": {}
 }
