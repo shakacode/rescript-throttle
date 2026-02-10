@@ -33,7 +33,7 @@
     "throttle"
   ],
   "dependencies": {
-    "rescript-throttle": "^2.0.0"
+    "rescript-throttle": "^3.0.0"
   },
   "devDependencies": {
     "@rescript/react": "0.14.1",

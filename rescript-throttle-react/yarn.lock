@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@rescript/core@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rescript/core/-/core-1.0.0.tgz#8626f3b1c09eeb1b4788f42f754e58d3e68041c1"
-  integrity sha512-F5HURYYx8Kp6h1KBiri2nFwGKR16o9/XTCNl2TEWfCwqR+MTzf/lpuPuB6ajnaYytsU0kTUBIFI0DOoLgkDxSg==
-
 "@rescript/darwin-arm64@12.1.0":
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/@rescript/darwin-arm64/-/darwin-arm64-12.1.0.tgz#19b75d31e97386dabfe382a6c98653314812afe3"
@@ -42,12 +37,10 @@
   resolved "https://registry.yarnpkg.com/@rescript/win32-x64/-/win32-x64-12.1.0.tgz#8ba1b79aea58a6e46ce286f3fd1c280859bb45c2"
   integrity sha512-nQC42QByyAbryfkbyK67iskipUqXVwTPCFrqissY4jJoP0128gg0yG6DydJnV1stXphtFdMFHtmyYE1ffG7UBg==
 
-rescript-throttle@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/rescript-throttle/-/rescript-throttle-2.0.0.tgz#dc7330bbc221bdaa3663573df4336946652b2878"
-  integrity sha512-eiOtIKvWFYFOLJymSNyK1eoDhpX9HXC5CwBbf9pZVBYPwzthDfXzuf02vt4E7N3oGw0bdWUftzoz5vUiXcvBJQ==
-  dependencies:
-    "@rescript/core" "1.0.0"
+rescript-throttle@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/rescript-throttle/-/rescript-throttle-3.0.0.tgz#6ec8282470a0b2a047855577700d00602b93d50d"
+  integrity sha512-N0V+dXTgU7Nzq81DP91os24aS74ljW6Uth6yh0UkU+y6ny4Jgyfm+SfUHZGHarZ3jSZhLAha3Ya12Oci2edJ9Q==
 
 rescript@12.1.0:
   version "12.1.0"
